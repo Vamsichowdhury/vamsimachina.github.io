@@ -19,19 +19,19 @@
   color: white; /* White text color */
 }
 
-.python {width: 90%; background-color: #4CAF50;} /* Green */
-.django {width: 80%; background-color: #2196F3;} /* Blue */
-.java {width: 65%; background-color: #2196F3;} /* Red */
+.python {width: 65%; background-color: #4CAF50;} /* Green */
+.django {width: 60%; background-color: #2196F3;} /* Blue */
+.java {width: 50%; background-color: #2196F3;} /* Red */
 .c {width: 60%; background-color: #808080;} /* Dark Grey */
 .javascript {width: 80%; background-color: #2196F3;} /* Red */
-.typescript {width: 60%; background-color: #2196F3;} /* Red */
+.typescript {width: 80%; background-color: #2196F3;} /* Red */
 .vuejs {width: 60%; background-color: #2196F3;} /* Red */
 .git {width: 70%; background-color: #2196F3;} /* Red */
 .reactjs {width: 70%; background-color: #808080;} /* Dark Grey */
-.html {width: 50%; background-color: #4CAF50;} /* Green */
-.css {width: 40%; background-color: #2196F3;} /* Blue */
-.bootstrap {width: 40%; background-color: #2196F3;} /* Red */
-.git {width: 40%; background-color: #808080;} /* Dark Grey */
+.html {width: 70%; background-color: #4CAF50;} /* Green */
+.css {width: 70%; background-color: #2196F3;} /* Blue */
+.bootstrap {width: 50%; background-color: #2196F3;} /* Red */
+.git {width: 70%; background-color: #808080;} /* Dark Grey */
 .pandas {width: 40%; background-color: #4CAF50;} /* Green */
 .numpy {width: 40%; background-color: #2196F3;} /* Blue */
 .opencv {width: 40%; background-color: #2196F3;} /* Red */
