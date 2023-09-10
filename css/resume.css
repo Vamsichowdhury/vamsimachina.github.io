@@ -4,16 +4,58 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
 
-body {
-  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  padding-top: 54px;
-  color: #868e96;
+ body {
+  font-family: 'monospace','Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  color: green;
+  background-image: url('../man-pixel-art-hacking-9ov9cdzfl8cs1zpu.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-position: center; /* Adjust the position as needed */
+}
+.landing-page{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10rem;
+}
+#access{
+  border: 5px solid red;
+  padding: 5px 10px;
+  color: red;
+  margin: 20px 0px;
+  text-shadow: 0 0 10px rgba(255, 79, 79, 0.7);
+
+}
+.name{
+  color: red;
+  font-weight: bold;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
+  z-index: -1; /* Place the overlay behind the content */
+}
+.mission{
+  text-align: center;
+  height: 100px;
+}
+.mission-desc{
+  margin-top: 5rem;
 }
 
 @media (min-width: 992px) {
   body {
     padding-top: 0;
     padding-left: 17rem;
+    color: green;
   }
 }
 
@@ -23,19 +65,21 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'monospace','Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: 700;
-  text-transform: uppercase;
   color: #343a40;
+  color: green;
 }
 
 h1 {
   font-size: 6rem;
   line-height: 5.5rem;
+  text-transform: uppercase;
 }
 
 h2 {
   font-size: 3.5rem;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -50,8 +94,16 @@ p.lead {
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'monospace','Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 1.5rem;
+}
+#operation{
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+}
+.experience{
+  font-weight: 800;
+  color: red;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
 }
 
 .social-icons a {
@@ -59,20 +111,23 @@ p.lead {
   height: 3.5rem;
   width: 3.5rem;
   background-color: #495057;
-  color: #fff !important;
+  color: rgb(153, 255, 0) !important;
   border-radius: 100%;
   text-align: center;
   font-size: 1.5rem;
-  line-height: 3.5rem;
+  line-height: 3rem;
   margin-right: 1rem;
+  border: 3px solid green;
+  box-shadow: 0px 0px 15px rgba(0, 255, 0, 0); /* Initial shadow with 0 opacity */
+  transition: box-shadow 0.5s ease; /* Add transition for the box-shadow property */
+}
+
+.social-icons a:hover {
+  box-shadow: 0px 0px 20px rgba(0, 255, 0, 1); /* Shadow effect on hover */
 }
 
 .social-icons a:last-child {
   margin-right: 0;
-}
-
-.social-icons a:hover {
-  background-color: #bd5d38;
 }
 
 .dev-icons {
@@ -80,15 +135,71 @@ p.lead {
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: #bd5d38;
+  color: rgb(0, 194, 0);
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.7); /* Adjust the color and blur radius as needed */
+}
+/* Define the initial border-right style */
+.navbar {
+  position: relative; /* Required for pseudo-elements */
+  border-right: 1px solid transparent;
 }
 
+/* Add glowing effect on the right side */
+.navbar::before,
+.navbar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 2px; /* Adjust the width of the glow */
+  height: 100%;
+  background-color: rgb(0, 189, 0); /* Adjust the color of the glow */
+  box-shadow: 0px 0px 5px rgba(0, 255, 0, 1); /* Add shadow effect */
+  animation: glowingBorder 2s infinite; /* Adjust duration as needed */
+}
+
+/* Adjust the positioning of the left and right glows */
+.navbar::before {
+  left: -5px; /* Position the left glow */
+}
+
+.navbar::after {
+  right: -5px; /* Position the right glow */
+}
+
+/* Add a CSS animation for the glowing effect */
+@keyframes glowingBorder {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+
+.navbar-dark .navbar-nav .nav-link{
+  color: rgb(99, 161, 54);
+}
+.navbar-dark .navbar-nav .nav-link.active{
+  color: rgb(0, 179, 0);
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+  color: rgb(137, 223, 0);
+  text-decoration: underline;
+}
+
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: rgb(175, 255, 46);
+}
 #sideNav .navbar-toggler:focus {
   outline-color: #d48a6e;
 }
@@ -115,11 +226,14 @@ p.lead {
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
   #sideNav .navbar-collapse {
+    font-family: 'Times New Roman', Times, serif;
     display: flex;
     align-items: flex-start;
     flex-grow: 0;
     width: 100%;
     margin-bottom: auto;
+    border: 1px solid green;
+    box-shadow: 0px 0px 5px rgba(0, 255, 0, 1); /* Add shadow effect */
   }
   #sideNav .navbar-collapse .navbar-nav {
     flex-direction: column;
@@ -161,11 +275,11 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #bd5d38 !important;
+  background-color: black !important;
 }
 
 .text-primary {
-  color: #bd5d38 !important;
+  color: green !important;
 }
 
 a {
