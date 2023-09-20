@@ -132,7 +132,31 @@ p.lead {
 .social-icons a:hover {
   box-shadow: 0px 0px 20px rgba(0, 255, 0, 1); /* Shadow effect on hover */
 }
+.certification-left-icon a, .card-image i {
+  display: inline-block;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: #18191b;
+  color: rgb(153, 255, 0) !important;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  border: 3px solid green;
+  box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.5); /* Initial shadow with 0 opacity */
+  transition: box-shadow 0.5s ease; /* Add transition for the box-shadow property */
+}
 
+.certification-icons a:hover {
+  box-shadow: 0px 0px 20px rgba(0, 255, 0, 1); /* Shadow effect on hover */
+}
+.certification-left-icon{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.certification-left-icon i {
+  margin-top: -1rem;
+}
 .social-icons a:last-child {
   margin-right: 0;
 }
