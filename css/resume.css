@@ -25,9 +25,8 @@
   border: 5px solid rgb(146, 255, 50);
   border-top: 20px solid rgb(146, 255, 50);
   padding: 5px 10px;
-  color: rgb(60, 255, 0);
+  color: rgb(146, 255, 50);
   margin: 20px 0px;
-  text-shadow: 0 0 10px rgb(60, 255, 0, 0.9);
   text-align: center;
 }
 .name{
@@ -103,7 +102,6 @@ p.lead {
   font-size: 1.5rem;
 }
 #operation{
-  text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
   text-align:center;
   width: 80vw;
 }
