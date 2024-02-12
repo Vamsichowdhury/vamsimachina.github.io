@@ -13,7 +13,7 @@ function displayExperience() {
     const totalMonths = (currentDate.getFullYear() - startDate.getFullYear()) * 12 + (currentDate.getMonth() - startDate.getMonth() + 1);
     const years = parseFloat(totalMonths / 12).toFixed(1)
     const experience = document.querySelector(".experience");
-    experience.textContent = 2 || years + " years "
+    experience.textContent = 3 || years + " years "
 }
 
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
